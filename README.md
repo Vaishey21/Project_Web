@@ -1,0 +1,1 @@
+Go to client terminal type "npm start" - to view the Web Page.
