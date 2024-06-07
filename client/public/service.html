@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCarePro</title>
+    <link rel="stylesheet" href="../src/index.css">
+</head>
+<body>
+  <div id="root"></div>
+
+    <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+        <div class="logo">
+            <!-- Uncomment below if you prefer to use an text logo -->
+            <h1><a href="index.html">AutoCarePro</a></h1>
+            
+          </div>
+    <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="service.html">Services</a></li>
+          <li><a class="nav-link scrollto" href="packages.html">Packages</a></li>
+          <li><a class="nav-link scrollto " href="Admin.html">Admin</a></li>
+          <li><a class="nav-link scrollto" href="#team">Appointment</a></li>
+          
+          <li><a class="nav-link scrollto" href="register.html">Login</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+<!-- ======= Services Section ======= -->
+<section id="services" class="section-bg">
+    <div class="container" data-aos="fade-up">
+  
+      <header class="section-header">
+        <h3>Our Services</h3>
+        <p>We offer a wide range of services to keep your vehicle running smoothly.</p>
+      </header>
+  
+      <div class="row justify-content-center">
+  
+        <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+          <div class="box">
+            <div class="icon"><i class="bi bi-gear-wide-connected" style="color: #ff689b;"></i></div>
+            <h4 class="title"><a href="">Engine Tune-up</a></h4>
+            <p class="description">Keep your engine running at its best with our engine tune-up service. We'll check and adjust all vital engine components for optimal performance.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+          <div class="box">
+            <div class="icon"><i class="bi bi-tools" style="color: #e9bf06;"></i></div>
+            <h4 class="title"><a href="">Diagnostic Services</a></h4>
+            <p class="description">If your vehicle is experiencing issues, our diagnostic services can identify the problem quickly and accurately. We'll provide you with detailed diagnostics and repair recommendations.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+          <div class="box">
+            <div class="icon"><i class="bi bi-oil" style="color: #3fcdc7;"></i></div>
+            <h4 class="title"><a href="">Oil Change</a></h4>
+            <p class="description">Regular oil changes are essential for maintaining engine health. Our oil change service includes draining the old oil, replacing the filter, and adding fresh oil to your vehicle.</p>
+          </div>
+        </div>
+        
+  
+      </div>
+  
+    </div>
+</section><!-- End Services Section -->
+ 
+<!-- ======= Why Us Section ======= -->
+<section id="why-us">
+  <div class="container" data-aos="fade-up">
+    <header class="section-header">
+      <h3>Why choose us?</h3>
+      <p>Discover why AutoCarePro is the best choice for all your vehicle maintenance needs.</p>
+    </header>
+
+    <div class="row row-eq-height justify-content-center">
+
+      <div class="col-lg-4 mb-4">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+          <i class="bi bi-calendar4-week"></i>
+          <div class="card-body">
+            <h5 class="card-title">Convenient Scheduling</h5>
+            <p class="card-text">Easily book appointments at your convenience with our user-friendly scheduling system, ensuring minimal disruption to your day.</p>
+            <a href="#" class="readmore">Read more </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          <i class="bi bi-tools"></i>
+          <div class="card-body">
+            <h5 class="card-title">Expert Technicians</h5>
+            <p class="card-text">Our certified and experienced technicians provide top-notch service, using the latest tools and techniques to keep your vehicle in peak condition.</p>
+            <a href="#" class="readmore">Read more </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="card" data-aos="zoom-in" data-aos-delay="300">
+          <i class="bi bi-chat-square-text"></i>
+          <div class="card-body">
+            <h5 class="card-title">Customer Satisfaction</h5>
+            <p class="card-text">We prioritize customer satisfaction, ensuring clear communication, transparency, and quality service to build long-lasting relationships.</p>
+            <a href="#" class="readmore">Read more </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  
+  </div>
+</section><!-- End Why Us Section -->
+
+<style>
+body {
+  background: #fff;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #0b6bd3;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+--------------------------------------------------------------
+#Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+position: fixed;
+visibility: hidden;
+opacity: 0;
+right: 15px;
+bottom: 15px;
+z-index: 996;
+background: #007bff;
+width: 40px;
+height: 40px;
+border-radius: 50px;
+transition: all 0.4s;
+}
+
+.back-to-top i {
+font-size: 28px;
+color: #fff;
+line-height: 0;
+}
+
+.back-to-top:hover {
+background: #2990ff;
+color: #fff;
+}
+
+.back-to-top.active {
+visibility: visible;
+opacity: 1;
+}
+ /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 80px;
+  z-index: 997;
+  transition: all 0.5s;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+
+#header.header-scrolled {
+  height: 60px;
+}
+
+#header.logo h1 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  #header .logo h1 {
+    font-size: 35px;
+  }
+}
+#header .logo h1,
+#header .logo h1:hover {
+color: #06182b;
+text-decoration: none;
+}
+
+#header .logo {
+padding: 20px;
+max-height: 20px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0px;
+  padding: 0px;
+  float: right;
+  margin-top: -40px;
+  display: flex;
+  list-style: none;
+  align-items: right;
+}
+
+.navbar li {
+  position: relative;
+  
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: right;
+  
+  justify-content: space-between;
+  padding: 10px 15px 10px 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #004289;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 500px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #091624;
+}
+
+**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+color: #283d50;
+font-size: 28px;
+cursor: pointer;
+display: none;
+line-height: 0;
+transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+color: #fff;
+}
+
+@media (max-width: 991px) {
+.mobile-nav-toggle {
+  display: block;
+}
+
+.navbar ul {
+  display: none;
+}
+}
+
+.navbar-mobile {
+position: fixed;
+overflow: hidden;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+background: rgba(23, 35, 46, 0.9);
+transition: 0.3s;
+z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+position: absolute;
+top: 15px;
+right: 15px;
+}
+
+.navbar-mobile ul {
+display: block;
+position: absolute;
+top: 55px;
+right: 15px;
+bottom: 15px;
+left: 15px;
+padding: 10px 0;
+background-color: #fff;
+overflow-y: auto;
+transition: 0.3s;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+padding: 10px 20px;
+font-size: 15px;
+color: #004289;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+color: #007bff;
+}
+
+.container h2 {
+  margin-top: 20px;
+}
+
+.container p {
+  margin-bottom: 10px;
+}
+
+.container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+#services {
+  padding: 60px 0 40px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#services .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 250px 40px 250px;
+  background: #286bd5;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#services .box:hover {
+  transform: translateY(-5px);
+}
+
+#services .icon {
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 32px);
+}
+
+#services .icon i {
+  font-size: 64px;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+#services .title {
+  margin-left: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#services .title a {
+  color: #111;
+}
+#services .section-header {
+  text-align: center;
+}
+
+#services .section-header h3 {
+  margin-bottom: 20px;
+}
+
+#services .section-header p {
+  margin-bottom: 40px;
+  margin: 10px;
+  max-width: 600px;
+  padding-left: 450px;
+}
+
+
+#services .box:hover .title a {
+  color: #007bff;
+}
+
+#services .description {
+  font-size: 14px;
+  margin-left: 40px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+#why-us {
+  padding: 60px 0;
+  background: #004a99;
+}
+
+#why-us .section-header h3,
+#why-us .section-header p {
+  color: #fff;
+}
+
+#why-us .card {
+  background: #00458f;
+  border-color: #00458f;
+  border-radius: 10px;
+  margin:50px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  height: 100%;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+}
+
+@media (max-width: 1000px) {
+  #why-us .card {
+    margin: 0;
+  }
+}
+#why-us .section-header {
+  text-align: center;
+  margin-bottom: 10px; /* Adjust this value as needed for spacing */
+}
+
+#why-us .section-header h3 {
+  margin-bottom: 20px; /* Adjust this value for spacing between heading and paragraph */
+}
+
+#why-us .section-header p {
+  margin: 0 auto;
+  max-width: 600px; /* Optional: restrict the width of the paragraph for better readability */
+}
+
+#why-us .card:hover {
+  background: #003b7a;
+  border-color: #003b7a;
+}
+
+#why-us .card i {
+  font-size: 48px;
+  padding-top: 15px;
+  color: #bfddfe;
+}
+
+#why-us .card h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#why-us .card p {
+  font-size: 14px;
+  color: #d8eafe;
+}
+
+#why-us .card .readmore {
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  border-bottom: #00458f solid 2px;
+}
+
+#why-us .card .readmore:hover {
+  border-bottom: #fff solid 2px;
+}
+
+#why-us .counters {
+  padding-top: 40px;
+}
+
+#why-us .counters span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #fff;
+}
+/* Adjust for responsive design */
+@media (max-width: 991px) {
+  #why-us .card {
+    margin: 10px 0;
+}
+#why-us .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #cce5ff;
+}
+}
+@media (min-width: 768px) {
+  #why-us .col-md-4 {
+    flex: 0 0 30%; /* Make columns slightly smaller than one-third */
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  #why-us .col-md-4 {
+    flex: 0 0 45%; /* Make columns take up less width on smaller screens */
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 575px) {
+  #why-us .col-md-4 {
+    flex: 0 0 100%; /* Make columns full width on extra small screens */
+    max-width: 100%;
+  }
+}
+</style>
